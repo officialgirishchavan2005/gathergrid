@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GatherGrid — Community Events Discovery (Demo)</title>
+  <meta name="description" content="GatherGrid is a fictional community events discovery platform demo for exploring workshops, meetups, exhibitions, and local gatherings.">
+  <link rel="icon" type="image/svg+xml" href="assets/gathergrid-mark.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Demo Notice Top Bar -->
+  <div class="demo-bar" role="note" aria-label="Demo platform notice">
+    <div class="container demo-bar-inner">
+      <span class="demo-pill">DEMO PLATFORM</span>
+      <p class="demo-bar-text">All events, venues, and hosts are fictional demonstration data. Saved events persist locally in your browser.</p>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo" aria-label="GatherGrid home">
+        <img src="assets/gathergrid-mark.svg" alt="" width="38" height="38" class="brand-mark">
+        <span class="brand-text">
+          <span class="brand-name">GATHERGRID</span>
+          <span class="brand-tag">CITY GUIDE · DEMO</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#explore" class="nav-link">Explore</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#calendar-section" class="nav-link">Calendar</a></li>
+          <li>
+            <button type="button" class="nav-link nav-saved-btn" id="header-saved-btn" aria-haspopup="dialog" aria-controls="saved-drawer">
+              Saved Events
+              <span class="saved-badge" id="header-saved-count" aria-live="polite">0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="header-search" id="header-search-form" role="search" aria-label="Header event search">
+          <label for="header-search-input" class="sr-only">Search events by name</label>
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7.5"></circle>
+            <path d="M20 20L16.4 16.4" stroke-linecap="round"></path>
+          </svg>
+          <input type="search" id="header-search-input" placeholder="Search events..." autocomplete="off">
+        </form>
+
+        <a href="#host-section" class="btn btn-sm btn-coral header-host-cta">Host Event</a>
+
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" hidden></div>
+  <aside
+    class="mobile-nav-drawer"
+    id="mobile-nav-drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile navigation"
+    hidden
+  >
+    <div class="mobile-nav-header">
+      <span class="brand-name">GATHERGRID</span>
+      <button type="button" class="icon-close-btn" id="mobile-nav-close" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+
+    <form class="mobile-search-form" id="mobile-search-form" role="search">
+      <label for="mobile-search-input" class="sr-only">Search events</label>
+      <input type="search" id="mobile-search-input" placeholder="Search workshops, gigs, venues..." autocomplete="off">
+      <button type="submit" class="btn btn-sm btn-yellow">Go</button>
+    </form>
+
+    <nav aria-label="Mobile menu links">
+      <ul class="mobile-nav-links">
+        <li><a href="#explore" class="mobile-nav-link">Explore Events</a></li>
+        <li><a href="#categories" class="mobile-nav-link">Categories</a></li>
+        <li><a href="#calendar-section" class="mobile-nav-link">Event Calendar</a></li>
+        <li>
+          <button type="button" class="mobile-nav-link mobile-saved-trigger" id="mobile-saved-btn">
+            Saved Events
+            <span class="saved-badge" id="mobile-saved-count">0</span>
+          </button>
+        </li>
+        <li><a href="#host-section" class="mobile-nav-link">Host an Event</a></li>
+        <li><a href="#newsletter-section" class="mobile-nav-link">Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <p class="mobile-nav-note">Static Product Demo · Fictional community listings</p>
+  </aside>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-coral" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-lavender" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Nov – Dec 2026 Neighborhood Dispatch · Demo</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Find Your People.<br>
+            <span class="hero-title-accent">Discover Your Next Thing.</span>
+          </h1>
+          <p class="hero-description">
+            An editorial guide to tactile workshops, late-night listening rooms, indie hacknights, and neighborhood rituals. Curated for curious minds looking for real-world creative energy.
+          </p>
+
+          <form class="hero-search-bar" id="hero-search-form" role="search" aria-label="Search community events">
+            <label for="hero-search-input" class="sr-only">Search by event name, venue, or keyword</label>
+            <div class="hero-search-field">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <circle cx="11" cy="11" r="7.5"></circle>
+                <path d="M20 20L16.4 16.4" stroke-linecap="round"></path>
+              </svg>
+              <input
+                type="search"
+                id="hero-search-input"
+                placeholder="Try “ceramics”, “synth”, “dumpling”, or “free”..."
+                autocomplete="off"
+              >
+            </div>
+            <button type="submit" class="btn btn-yellow hero-search-submit">Find Events</button>
+          </form>
+
+          <div class="hero-quick-tags" aria-label="Quick discovery shortcuts">
+            <span class="quick-tags-label">Quick jumps:</span>
+            <button type="button" class="quick-tag" data-collection="this-weekend">This Weekend</button>
+            <button type="button" class="quick-tag" data-price="free">Free Entry</button>
+            <button type="button" class="quick-tag" data-category="Art & Design">Art &amp; Design</button>
+            <button type="button" class="quick-tag" data-category="Technology">Technology</button>
+          </div>
+
+          <dl class="hero-stats">
+            <div class="hero-stat">
+              <dt>Curated Listings</dt>
+              <dd>16 Demo Events</dd>
+            </div>
+            <div class="hero-stat">
+              <dt>Disciplines</dt>
+              <dd>7 Categories</dd>
+            </div>
+            <div class="hero-stat">
+              <dt>Free Gatherings</dt>
+              <dd>6 Open Doors</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Editorial Visual Collage of Event Cards -->
+        <div class="hero-collage" aria-label="Featured event collage">
+          <div class="collage-sticker collage-sticker-yellow" aria-hidden="true">NOV 26 – DEC 15</div>
+          <div class="collage-sticker collage-sticker-coral" aria-hidden="true">LOCAL FIRST</div>
+          <div id="hero-collage-cards" class="collage-stack">
+            <!-- Populated dynamically from events data for interactive modals -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="collections-section" id="collections" aria-labelledby="collections-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">CURATED PLAYLISTS FOR YOUR CALENDAR</p>
+            <h2 id="collections-heading" class="section-title">Featured Collections</h2>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm" id="clear-collection-btn" hidden>
+            Clear collection filter
+          </button>
+        </div>
+
+        <div class="collections-grid" id="collections-grid">
+          <button type="button" class="collection-card collection-coral" data-collection-id="this-weekend">
+            <div class="collection-top">
+              <span class="collection-badge">SAT &amp; SUN · NOV 28–29</span>
+              <span class="collection-count" data-collection-count="this-weekend">0 events</span>
+            </div>
+            <h3 class="collection-name">This Weekend</h3>
+            <p class="collection-desc">Sunrise rooftop miles, wheel-free clay, zine swaps, and courtyard lanterns.</p>
+            <span class="collection-cta">Explore collection &rarr;</span>
+          </button>
+
+          <button type="button" class="collection-card collection-lavender" data-collection-id="creative-minds">
+            <div class="collection-top">
+              <span class="collection-badge">ART · SOUND · PRINT</span>
+              <span class="collection-count" data-collection-count="creative-minds">0 events</span>
+            </div>
+            <h3 class="collection-name">Creative Minds</h3>
+            <p class="collection-desc">Modular synths, risograph presses, shader visuals, and urban ink walks.</p>
+            <span class="collection-cta">Explore collection &rarr;</span>
+          </button>
+
+          <button type="button" class="collection-card collection-yellow" data-collection-id="free-community">
+            <div class="collection-top">
+              <span class="collection-badge">$0 ENTRY · OPEN DOORS</span>
+              <span class="collection-count" data-collection-count="free-community">0 events</span>
+            </div>
+            <h3 class="collection-name">Free Community Events</h3>
+            <p class="collection-desc">Zero-ticket neighborhood meetups, repair cafés, and open-air socials.</p>
+            <span class="collection-cta">Explore collection &rarr;</span>
+          </button>
+
+          <button type="button" class="collection-card collection-midnight" data-collection-id="learn-new">
+            <div class="collection-top">
+              <span class="collection-badge">HANDS-ON WORKSHOPS</span>
+              <span class="collection-count" data-collection-count="learn-new">0 events</span>
+            </div>
+            <h3 class="collection-name">Learn Something New</h3>
+            <p class="collection-desc">Fermentation jars, e-ink dashboards, dumpling pleats, and ethical storytelling.</p>
+            <span class="collection-cta">Explore collection &rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Discovery & Filter System -->
+    <section class="explore-section" id="explore" aria-labelledby="explore-heading">
+      <div class="container">
+        <div class="section-header explore-header">
+          <div>
+            <p class="section-kicker">DISCOVER WHAT'S HAPPENING</p>
+            <h2 id="explore-heading" class="section-title">Upcoming Community Events</h2>
+          </div>
+          <p class="results-summary" id="results-summary" aria-live="polite">Showing 16 of 16 events</p>
+        </div>
+
+        <!-- Filter Controls Panel -->
+        <div class="filter-panel" id="categories" aria-label="Event filters">
+          <div class="filter-row-top">
+            <div class="discovery-search-wrap">
+              <label for="discovery-search-input" class="sr-only">Search events by name</label>
+              <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <circle cx="11" cy="11" r="7.5"></circle>
+                <path d="M20 20L16.4 16.4" stroke-linecap="round"></path>
+              </svg>
+              <input
+                type="search"
+                id="discovery-search-input"
+                placeholder="Search by event name, venue, or host..."
+                autocomplete="off"
+              >
+            </div>
+
+            <div class="filter-select-group">
+              <div class="control-field">
+                <label for="date-filter-select" class="control-label">Date</label>
+                <select id="date-filter-select" class="control-select">
+                  <option value="all">All Dates</option>
+                  <option value="this-weekend">This Weekend (Nov 28–29)</option>
+                  <option value="this-week">This Week (Nov 25–30)</option>
+                  <option value="next-week">Next Week (Dec 1–7)</option>
+                  <option value="december">All December</option>
+                </select>
+              </div>
+
+              <div class="control-field">
+                <label for="price-filter-select" class="control-label">Price</label>
+                <select id="price-filter-select" class="control-select">
+                  <option value="all">Free &amp; Paid</option>
+                  <option value="free">Free Only</option>
+                  <option value="paid">Paid Only</option>
+                </select>
+              </div>
+
+              <div class="control-field">
+                <label for="sort-select" class="control-label">Sort by</label>
+                <select id="sort-select" class="control-select">
+                  <option value="date-asc">Date: Soonest first</option>
+                  <option value="date-desc">Date: Latest first</option>
+                  <option value="price-asc">Price: Low to high</option>
+                  <option value="title-asc">Name: A to Z</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Pills -->
+          <div class="category-pills" id="category-pills" role="group" aria-label="Filter by category">
+            <button type="button" class="category-pill is-active" data-category="All" aria-pressed="true">All</button>
+            <button type="button" class="category-pill" data-category="Technology" aria-pressed="false">Technology</button>
+            <button type="button" class="category-pill" data-category="Art & Design" aria-pressed="false">Art &amp; Design</button>
+            <button type="button" class="category-pill" data-category="Music" aria-pressed="false">Music</button>
+            <button type="button" class="category-pill" data-category="Business" aria-pressed="false">Business</button>
+            <button type="button" class="category-pill" data-category="Fitness" aria-pressed="false">Fitness</button>
+            <button type="button" class="category-pill" data-category="Food" aria-pressed="false">Food</button>
+            <button type="button" class="category-pill" data-category="Community" aria-pressed="false">Community</button>
+          </div>
+
+          <!-- Active Filter Chips -->
+          <div class="active-filters-bar" id="active-filters-bar" hidden>
+            <span class="active-filters-label">Active filters:</span>
+            <div class="active-filter-chips" id="active-filter-chips"></div>
+            <button type="button" class="reset-inline-btn" id="reset-filters-inline">Reset all</button>
+          </div>
+        </div>
+
+        <!-- Event Grid -->
+        <div class="events-grid" id="events-grid"></div>
+
+        <!-- Empty Search / Filter State -->
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-illustration" aria-hidden="true">
+            <svg width="84" height="84" viewBox="0 0 84 84" fill="none">
+              <circle cx="42" cy="42" r="38" fill="#141F38" stroke="#2D4273" stroke-width="2" stroke-dasharray="6 6"/>
+              <circle cx="38" cy="38" r="14" stroke="#FFE156" stroke-width="3"/>
+              <path d="M48 48L59 59" stroke="#FF6B5B" stroke-width="4" stroke-linecap="round"/>
+              <path d="M33 38H43" stroke="#B89CFF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="empty-title">No gatherings match those filters</h3>
+          <p class="empty-desc">Try loosening your category, date, or search terms to bring the full neighborhood grid back.</p>
+          <button type="button" class="btn btn-coral" id="empty-reset-btn">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Monthly Calendar -->
+    <section class="calendar-section" id="calendar-section" aria-labelledby="calendar-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">PLAN YOUR MONTH</p>
+            <h2 id="calendar-heading" class="section-title">Interactive Event Calendar</h2>
+          </div>
+          <p class="section-subcopy">Select any marked date to filter the event grid and preview that day's lineup.</p>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="calendar-card">
+            <div class="calendar-toolbar">
+              <button type="button" class="cal-nav-btn" id="cal-prev-btn" aria-label="Previous month">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <h3 class="cal-month-label" id="cal-month-label">November 2026</h3>
+              <button type="button" class="cal-nav-btn" id="cal-next-btn" aria-label="Next month">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+
+            <div class="calendar-grid" id="calendar-grid" role="grid" aria-labelledby="cal-month-label"></div>
+
+            <div class="calendar-legend" aria-label="Calendar marker legend">
+              <span class="legend-item"><span class="legend-dot dot-coral" aria-hidden="true"></span>Events scheduled</span>
+              <span class="legend-item"><span class="legend-dot dot-yellow" aria-hidden="true"></span>Selected date filter</span>
+              <button type="button" class="legend-clear-btn" id="cal-clear-date-btn" hidden>Show all dates</button>
+            </div>
+          </div>
+
+          <!-- Selected Date Side Agenda -->
+          <aside class="calendar-agenda" aria-live="polite" aria-label="Selected date schedule">
+            <div class="agenda-header">
+              <span class="agenda-kicker" id="agenda-kicker">CALENDAR SPOTLIGHT</span>
+              <h3 class="agenda-title" id="agenda-title">Click a highlighted date</h3>
+              <p class="agenda-subtitle" id="agenda-subtitle">Dates with colored dots host fictional GatherGrid workshops, meetups, and jams.</p>
+            </div>
+            <div class="agenda-list" id="agenda-list"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Host an Event Demo Form -->
+    <section class="host-section" id="host-section" aria-labelledby="host-heading">
+      <div class="container host-grid">
+        <div class="host-intro">
+          <p class="section-kicker">ORGANIZE WITH US · DEMO</p>
+          <h2 id="host-heading" class="section-title">Host an Event on GatherGrid</h2>
+          <p class="host-copy">
+            Have a rooftop sketching walk, basement listening session, or Sunday kitchen lab in mind? Test our front-end host submission workflow below.
+          </p>
+
+          <ul class="host-perks">
+            <li>
+              <span class="perk-badge perk-coral" aria-hidden="true">01</span>
+              <div>
+                <strong>Editorial Placement</strong>
+                <p>Clean event cards designed to highlight craft, venue character, and clear timing.</p>
+              </div>
+            </li>
+            <li>
+              <span class="perk-badge perk-lavender" aria-hidden="true">02</span>
+              <div>
+                <strong>Smart Collection Tagging</strong>
+                <p>Events automatically surface in weekend picks, free community lists, and calendar views.</p>
+              </div>
+            </li>
+            <li>
+              <span class="perk-badge perk-yellow" aria-hidden="true">03</span>
+              <div>
+                <strong>Static Demo Guarantee</strong>
+                <p>No backend is connected — submitting validates fields and displays a local confirmation preview without publishing.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="host-form-card">
+          <form id="host-event-form" novalidate>
+            <div class="form-grid-two">
+              <div class="form-field">
+                <label for="host-title">Event Title <span class="req">*</span></label>
+                <input type="text" id="host-title" name="title" placeholder="e.g. Sunday Botanical Printmaking" required>
+                <span class="field-error" id="err-host-title" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="host-category">Category <span class="req">*</span></label>
+                <select id="host-category" name="category" required>
+                  <option value="">Select a category</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Art & Design">Art &amp; Design</option>
+                  <option value="Music">Music</option>
+                  <option value="Business">Business</option>
+                  <option value="Fitness">Fitness</option>
+                  <option value="Food">Food</option>
+                  <option value="Community">Community</option>
+                </select>
+                <span class="field-error" id="err-host-category" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-grid-two">
+              <div class="form-field">
+                <label for="host-date">Event Date <span class="req">*</span></label>
+                <input type="date" id="host-date" name="date" required>
+                <span class="field-error" id="err-host-date" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="host-time">Time Window <span class="req">*</span></label>
+                <input type="text" id="host-time" name="time" placeholder="e.g. 18:30 – 21:00" required>
+                <span class="field-error" id="err-host-time" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-grid-two">
+              <div class="form-field">
+                <label for="host-venue">Venue / Neighborhood <span class="req">*</span></label>
+                <input type="text" id="host-venue" name="venue" placeholder="e.g. Presshouse Annex, Arts Quarter" required>
+                <span class="field-error" id="err-host-venue" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="host-price">Ticket Price (USD, 0 for Free) <span class="req">*</span></label>
+                <input type="number" id="host-price" name="price" min="0" max="500" step="1" placeholder="0" required>
+                <span class="field-error" id="err-host-price" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-grid-two">
+              <div class="form-field">
+                <label for="host-organizer">Host Name / Collective <span class="req">*</span></label>
+                <input type="text" id="host-organizer" name="organizer" placeholder="e.g. North Loop Print Co-op" required>
+                <span class="field-error" id="err-host-organizer" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="host-email">Contact Email <span class="req">*</span></label>
+                <input type="email" id="host-email" name="email" placeholder="you@example.demo" required>
+                <span class="field-error" id="err-host-email" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="host-description">Event Description <span class="req">*</span></label>
+              <textarea id="host-description" name="description" rows="3" placeholder="Tell neighbors what happens, who it's for, and what to bring (min. 20 characters)..." required></textarea>
+              <span class="field-error" id="err-host-description" role="alert"></span>
+            </div>
+
+            <div class="host-form-footer">
+              <p class="demo-form-note">Front-end demo only: entries are validated locally and not published.</p>
+              <button type="submit" class="btn btn-coral">Validate &amp; Preview Demo</button>
+            </div>
+          </form>
+
+          <div class="host-demo-confirmation" id="host-demo-confirmation" hidden role="status" aria-live="polite">
+            <div class="confirmation-badge">DEMO CONFIRMATION · NOT PUBLISHED</div>
+            <h3 class="confirmation-title" id="conf-event-title">Sample Event Validated</h3>
+            <p class="confirmation-copy">
+              Your sample submission passed front-end validation. Because GatherGrid is a static demo with no backend, this listing has <strong>not</strong> been published or transmitted.
+            </p>
+            <dl class="confirmation-summary" id="conf-event-summary"></dl>
+            <button type="button" class="btn btn-ghost btn-sm" id="host-reset-demo-btn">Submit Another Sample</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-copy">
+            <span class="demo-pill demo-pill-dark">WEEKLY DISPATCH · DEMO</span>
+            <h2 id="newsletter-heading" class="newsletter-title">Get Friday's curated neighborhood grid.</h2>
+            <p class="newsletter-desc">One crisp email every Thursday with under-the-radar workshops, free open houses, and weekend walks. (Demo validation only — no real email is sent.)</p>
+          </div>
+
+          <div class="newsletter-form-wrap">
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="newsletter-email"
+                name="newsletterEmail"
+                placeholder="neighbor@example.demo"
+                autocomplete="email"
+                required
+              >
+              <button type="submit" class="btn btn-yellow">Subscribe (Demo)</button>
+            </form>
+            <p class="newsletter-feedback newsletter-error" id="newsletter-error" role="alert" hidden></p>
+            <p class="newsletter-feedback newsletter-success" id="newsletter-success" role="status" aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand-logo">
+          <img src="assets/gathergrid-mark.svg" alt="" width="34" height="34" class="brand-mark">
+          <span class="brand-name">GATHERGRID</span>
+        </a>
+        <p class="footer-about">
+          A fictional community events discovery platform built with HTML5, CSS3, and Vanilla JavaScript. All events, venues, and organizers shown are placeholder demonstration data.
+        </p>
+        <span class="footer-demo-tag">Static Front-End Demo · Zero Backend</span>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#explore">Explore Events</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#calendar-section">Event Calendar</a></li>
+          <li><button type="button" class="footer-link-btn" id="footer-saved-btn">Saved Events</button></li>
+          <li><a href="#host-section">Host an Event</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Social (Demo)</h3>
+        <ul class="footer-links">
+          <li><a href="#top" data-demo-link="Instagram">@gathergrid.demo (IG)</a></li>
+          <li><a href="#top" data-demo-link="Mastodon">@gathergrid (Mastodon)</a></li>
+          <li><a href="#top" data-demo-link="Are.na">GatherGrid Channels (Are.na)</a></li>
+          <li><a href="#top" data-demo-link="RSS">Weekly Dispatch Feed</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact Placeholders</h3>
+        <ul class="footer-contact">
+          <li><span>Email:</span> <a href="mailto:hello@gathergrid.demo">hello@gathergrid.demo</a></li>
+          <li><span>Studio:</span> 412 Harborview Lane, Suite 2B</li>
+          <li><span>Phone:</span> +1 (555) 014-8892 (Fictional)</li>
+          <li><span>Hours:</span> Tue–Sat, 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 GatherGrid (Fictional Demo Project). Crafted for community discovery.</p>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Event Detail Modal -->
+  <div class="modal-backdrop" id="event-modal-backdrop" hidden>
+    <div
+      class="modal-dialog event-modal"
+      id="event-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-event-title"
+      tabindex="-1"
+    >
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close event details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"></path>
+        </svg>
+      </button>
+
+      <div class="modal-media">
+        <img id="modal-event-image" alt="">
+        <span class="modal-category-pill" id="modal-event-category"></span>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-meta-top">
+          <span class="modal-date-badge" id="modal-event-date"></span>
+          <span class="modal-price-badge" id="modal-event-price"></span>
+        </div>
+
+        <h2 id="modal-event-title" class="modal-title"></h2>
+        <p class="modal-host" id="modal-event-host"></p>
+
+        <dl class="modal-info-grid">
+          <div class="modal-info-item">
+            <dt>Time</dt>
+            <dd id="modal-event-time"></dd>
+          </div>
+          <div class="modal-info-item">
+            <dt>Venue</dt>
+            <dd id="modal-event-venue"></dd>
+          </div>
+          <div class="modal-info-item">
+            <dt>Format &amp; Capacity</dt>
+            <dd id="modal-event-capacity"></dd>
+          </div>
+        </dl>
+
+        <p class="modal-description" id="modal-event-description"></p>
+
+        <div class="modal-tags" id="modal-event-tags"></div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-coral modal-save-btn" id="modal-save-btn" aria-pressed="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span id="modal-save-label">Save Event</span>
+          </button>
+          <button type="button" class="btn btn-ghost" id="modal-secondary-close">Done Reading</button>
+        </div>
+        <p class="modal-demo-footnote">Fictional demo event · Saving stores this item locally in your browser.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Saved Events Drawer Modal -->
+  <div class="modal-backdrop drawer-backdrop" id="saved-drawer-backdrop" hidden>
+    <aside
+      class="saved-drawer"
+      id="saved-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="saved-drawer-title"
+      tabindex="-1"
+    >
+      <div class="saved-drawer-header">
+        <div>
+          <span class="section-kicker">SAVED IN BROWSER</span>
+          <h2 id="saved-drawer-title" class="saved-drawer-title">Your Saved Events</h2>
+        </div>
+        <button type="button" class="icon-close-btn" id="saved-drawer-close" aria-label="Close saved events panel">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="saved-drawer-body" id="saved-drawer-list"></div>
+
+      <div class="saved-drawer-footer" id="saved-drawer-footer" hidden>
+        <p class="saved-storage-note">Persisted via <code>localStorage</code></p>
+        <button type="button" class="btn btn-ghost btn-sm" id="clear-all-saved-btn">Clear all saved</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Live Toast Region -->
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

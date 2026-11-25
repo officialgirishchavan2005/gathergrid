@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Winter Courtyard Lantern Walk and Swap artwork">
+  <rect width="800" height="520" fill="#091021"/>
+  <path d="M40 120 Q400 225 760 120" fill="none" stroke="#364B7A" stroke-width="3"/>
+  <line x1="175" y1="158" x2="175" y2="210" stroke="#B89CFF" stroke-width="2.5"/>
+  <line x1="395" y1="172" x2="395" y2="230" stroke="#FFE156" stroke-width="2.5"/>
+  <line x1="615" y1="158" x2="615" y2="205" stroke="#FF6B5B" stroke-width="2.5"/>
+  <circle cx="175" cy="260" r="56" fill="#B89CFF" opacity="0.24"/>
+  <ellipse cx="175" cy="260" rx="38" ry="48" fill="#B89CFF"/>
+  <circle cx="395" cy="295" r="78" fill="#FFE156" opacity="0.22"/>
+  <ellipse cx="395" cy="295" rx="50" ry="64" fill="#FFE156"/>
+  <circle cx="615" cy="255" r="62" fill="#FF6B5B" opacity="0.24"/>
+  <ellipse cx="615" cy="255" rx="42" ry="52" fill="#FF6B5B"/>
+  <rect x="0" y="425" width="800" height="95" fill="#111C38"/>
+  <circle cx="120" cy="85" r="4" fill="#FFE156"/>
+  <circle cx="510" cy="70" r="5" fill="#B89CFF"/>
+  <circle cx="705" cy="95" r="4" fill="#FFE156"/>
+</svg>

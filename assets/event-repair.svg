@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Repair Cafe Fix Electronics, Bikes and Textiles artwork">
+  <rect width="800" height="520" fill="#0B1326"/>
+  <circle cx="285" cy="265" r="115" fill="none" stroke="#FFE156" stroke-width="14"/>
+  <circle cx="285" cy="265" r="24" fill="#FF6B5B"/>
+  <circle cx="525" cy="265" r="115" fill="none" stroke="#B89CFF" stroke-width="14"/>
+  <circle cx="525" cy="265" r="24" fill="#FFE156"/>
+  <path d="M285 265 L395 160 L505 265 L395 265 Z" fill="none" stroke="#FF6B5B" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="360" y="95" width="190" height="36" rx="18" fill="#17274B" stroke="#FFE156" stroke-width="2.5"/>
+  <circle cx="645" cy="115" r="26" fill="#FF6B5B"/>
+  <circle cx="155" cy="125" r="18" fill="#B89CFF"/>
+</svg>

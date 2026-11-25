@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Fermentation Lab Wild Kimchi and Kraut artwork">
+  <rect width="800" height="520" fill="#0D162C"/>
+  <circle cx="220" cy="180" r="140" fill="#B89CFF" opacity="0.16"/>
+  <circle cx="600" cy="340" r="140" fill="#FF6B5B" opacity="0.16"/>
+  <rect x="260" y="135" width="220" height="280" rx="34" fill="#172647" stroke="#B89CFF" stroke-width="3"/>
+  <rect x="295" y="102" width="150" height="33" rx="10" fill="#FFE156"/>
+  <rect x="278" y="220" width="184" height="175" rx="20" fill="#FF6B5B" opacity="0.88"/>
+  <circle cx="330" cy="275" r="14" fill="#FFE156"/>
+  <circle cx="385" cy="310" r="18" fill="#FFE156"/>
+  <circle cx="345" cy="348" r="10" fill="#FFF3B0"/>
+  <circle cx="420" cy="260" r="9" fill="#FFF3B0"/>
+  <circle cx="365" cy="180" r="12" fill="#B89CFF"/>
+  <circle cx="398" cy="162" r="8" fill="#FFE156"/>
+  <circle cx="565" cy="195" r="46" fill="#FFE156"/>
+  <circle cx="565" cy="195" r="20" fill="#0D162C"/>
+  <path d="M130 350 Q175 265 215 350 Q175 405 130 350 Z" fill="#B89CFF"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="GatherGrid logo mark">
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="#121E3B" stroke="#2D4273" stroke-width="2"/>
+  <rect x="9" y="9" width="13" height="13" rx="4" fill="#FFE156"/>
+  <rect x="26" y="9" width="13" height="13" rx="6.5" fill="#FF6B5B"/>
+  <rect x="9" y="26" width="13" height="13" rx="6.5" fill="#B89CFF"/>
+  <path d="M26 26 H39 V39 H32.5 C28.9 39 26 36.1 26 32.5 Z" fill="#F5F3EE"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Late-Night Dumpling Folding and Tea Pairing artwork">
+  <rect width="800" height="520" fill="#0C1429"/>
+  <circle cx="400" cy="275" r="165" fill="#172647" stroke="#FFE156" stroke-width="3"/>
+  <circle cx="400" cy="275" r="128" fill="#101B34"/>
+  <path d="M295 275 C325 205, 425 205, 455 275 C415 305, 335 305, 295 275 Z" fill="#FFE156"/>
+  <path d="M350 335 C380 275, 470 275, 500 335 C460 362, 390 362, 350 335 Z" fill="#FF6B5B"/>
+  <circle cx="620" cy="155" r="52" fill="#B89CFF"/>
+  <path d="M602 125 Q610 95 602 80 M625 125 Q633 95 625 80" fill="none" stroke="#FFE156" stroke-width="4" stroke-linecap="round"/>
+  <line x1="120" y1="120" x2="275" y2="215" stroke="#FF6B5B" stroke-width="10" stroke-linecap="round"/>
+  <line x1="138" y1="95" x2="292" y2="195" stroke="#FFE156" stroke-width="10" stroke-linecap="round"/>
+</svg>

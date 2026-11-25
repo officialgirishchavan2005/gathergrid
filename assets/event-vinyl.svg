@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Candlelit Vinyl Listening Session artwork">
+  <rect width="800" height="520" fill="#0B1122"/>
+  <circle cx="350" cy="260" r="175" fill="#141F3B" stroke="#2D4172" stroke-width="3"/>
+  <circle cx="350" cy="260" r="142" fill="none" stroke="#263965" stroke-width="2"/>
+  <circle cx="350" cy="260" r="110" fill="none" stroke="#263965" stroke-width="2"/>
+  <circle cx="350" cy="260" r="62" fill="#FF6B5B"/>
+  <circle cx="350" cy="260" r="16" fill="#0B1122"/>
+  <path d="M555 125 L620 125 L560 285" fill="none" stroke="#B89CFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="620" cy="125" r="22" fill="#B89CFF"/>
+  <rect x="615" y="295" width="76" height="125" rx="14" fill="#FFE156"/>
+  <path d="M653 235 C673 262, 667 288, 653 292 C639 288, 633 262, 653 235 Z" fill="#FF6B5B"/>
+  <circle cx="653" cy="265" r="52" fill="#FFE156" opacity="0.18"/>
+</svg>

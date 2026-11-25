@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Neighborhood Zine Swap and Risograph Open House artwork">
+  <rect width="800" height="520" fill="#0D1429"/>
+  <g transform="rotate(-7 290 270)">
+    <rect x="150" y="105" width="250" height="320" rx="12" fill="#FFE156"/>
+    <circle cx="275" cy="225" r="62" fill="#FF6B5B"/>
+    <rect x="185" y="325" width="180" height="18" rx="4" fill="#0D1429"/>
+    <rect x="185" y="355" width="125" height="14" rx="4" fill="#0D1429"/>
+  </g>
+  <g transform="rotate(6 490 270)">
+    <rect x="370" y="110" width="255" height="320" rx="12" fill="#B89CFF"/>
+    <polygon points="495,165 565,285 425,285" fill="#0D1429"/>
+    <circle cx="495" cy="235" r="28" fill="#FFE156"/>
+    <rect x="405" y="325" width="185" height="18" rx="4" fill="#0D1429"/>
+    <rect x="405" y="355" width="140" height="14" rx="4" fill="#FF6B5B"/>
+  </g>
+  <circle cx="670" cy="120" r="30" fill="#FF6B5B"/>
+  <circle cx="115" cy="395" r="22" fill="#B89CFF"/>
+</svg>

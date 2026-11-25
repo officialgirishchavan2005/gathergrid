@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Local-First Web and Tiny Tools Hacknight artwork">
+  <rect width="800" height="520" fill="#091122"/>
+  <g fill="#19284A">
+    <circle cx="80" cy="80" r="3"/><circle cx="140" cy="80" r="3"/><circle cx="200" cy="80" r="3"/>
+    <circle cx="80" cy="140" r="3"/><circle cx="140" cy="140" r="3"/><circle cx="200" cy="140" r="3"/>
+    <circle cx="600" cy="380" r="3"/><circle cx="660" cy="380" r="3"/><circle cx="720" cy="380" r="3"/>
+    <circle cx="600" cy="440" r="3"/><circle cx="660" cy="440" r="3"/><circle cx="720" cy="440" r="3"/>
+  </g>
+  <rect x="130" y="95" width="540" height="330" rx="20" fill="#101C36" stroke="#2D4273" stroke-width="2.5"/>
+  <rect x="130" y="95" width="540" height="44" rx="20" fill="#17274A"/>
+  <circle cx="166" cy="117" r="7" fill="#FF6B5B"/>
+  <circle cx="192" cy="117" r="7" fill="#FFE156"/>
+  <circle cx="218" cy="117" r="7" fill="#B89CFF"/>
+  <rect x="175" y="175" width="170" height="18" rx="9" fill="#B89CFF"/>
+  <rect x="175" y="213" width="290" height="14" rx="7" fill="#2A3E6D"/>
+  <rect x="215" y="245" width="230" height="14" rx="7" fill="#FFE156"/>
+  <rect x="215" y="277" width="310" height="14" rx="7" fill="#2A3E6D"/>
+  <rect x="175" y="309" width="140" height="14" rx="7" fill="#FF6B5B"/>
+  <rect x="495" y="175" width="130" height="130" rx="16" fill="#17274A" stroke="#FFE156" stroke-width="2.5"/>
+  <path d="M535 225 L515 242 L535 259 M585 225 L605 242 L585 259 M567 215 L553 268" fill="none" stroke="#FFE156" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="635" cy="115" r="46" fill="#FF6B5B" opacity="0.22"/>
+</svg>

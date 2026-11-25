@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Bootstrapped Founders and Indie Makers Breakfast artwork">
+  <rect width="800" height="520" fill="#0B1327"/>
+  <rect x="115" y="100" width="265" height="320" rx="22" fill="#152242" stroke="#2D4273" stroke-width="2"/>
+  <rect x="145" y="135" width="120" height="20" rx="10" fill="#FFE156"/>
+  <path d="M150 320 L205 260 L255 290 L335 205" fill="none" stroke="#FF6B5B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="335" cy="205" r="10" fill="#FFE156"/>
+  <circle cx="545" cy="265" r="118" fill="#152242" stroke="#B89CFF" stroke-width="3"/>
+  <circle cx="545" cy="265" r="76" fill="#FF6B5B"/>
+  <path d="M510 265 Q545 230 580 265 Q545 300 510 265 Z" fill="#FFE156"/>
+  <rect x="650" y="245" width="46" height="40" rx="18" fill="none" stroke="#B89CFF" stroke-width="10"/>
+  <circle cx="480" cy="115" r="24" fill="#FFE156"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Midnight Synth and Modular Jam artwork">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C142B"/>
+      <stop offset="60%" stop-color="#191642"/>
+      <stop offset="100%" stop-color="#2B194D"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.72" cy="0.35" r="0.55">
+      <stop offset="0%" stop-color="#B89CFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B89CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg1)"/>
+  <rect width="800" height="520" fill="url(#glow1)"/>
+  <g stroke="#293861" stroke-width="1" opacity="0.55">
+    <line x1="0" y1="130" x2="800" y2="130"/><line x1="0" y1="260" x2="800" y2="260"/>
+    <line x1="0" y1="390" x2="800" y2="390"/><line x1="200" y1="0" x2="200" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/><line x1="600" y1="0" x2="600" y2="520"/>
+  </g>
+  <path d="M40 330 Q 130 160, 220 300 T 400 260 T 580 220 T 760 280" fill="none" stroke="#FFE156" stroke-width="5" stroke-linecap="round"/>
+  <path d="M40 365 Q 150 220, 260 340 T 460 290 T 640 260 T 760 320" fill="none" stroke="#FF6B5B" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+  <rect x="90" y="95" width="230" height="310" rx="18" fill="#0F1830" stroke="#B89CFF" stroke-width="2.5"/>
+  <circle cx="155" cy="165" r="28" fill="#1C2A4A" stroke="#FFE156" stroke-width="3"/>
+  <line x1="155" y1="165" x2="173" y2="147" stroke="#FFE156" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="255" cy="165" r="28" fill="#1C2A4A" stroke="#FF6B5B" stroke-width="3"/>
+  <line x1="255" y1="165" x2="239" y2="145" stroke="#FF6B5B" stroke-width="3" stroke-linecap="round"/>
+  <rect x="132" y="225" width="24" height="125" rx="12" fill="#1B2848"/>
+  <rect x="132" y="275" width="24" height="75" rx="12" fill="#B89CFF"/>
+  <rect x="193" y="225" width="24" height="125" rx="12" fill="#1B2848"/>
+  <rect x="193" y="245" width="24" height="105" rx="12" fill="#FFE156"/>
+  <rect x="254" y="225" width="24" height="125" rx="12" fill="#1B2848"/>
+  <rect x="254" y="295" width="24" height="55" rx="12" fill="#FF6B5B"/>
+  <circle cx="570" cy="175" r="95" fill="none" stroke="#B89CFF" stroke-width="2" stroke-dasharray="10 10"/>
+  <circle cx="570" cy="175" r="52" fill="#FF6B5B" opacity="0.85"/>
+  <circle cx="660" cy="360" r="34" fill="#FFE156"/>
+</svg>

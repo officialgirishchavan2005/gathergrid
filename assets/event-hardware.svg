@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Open Hardware and E-Ink Dashboard Build artwork">
+  <rect width="800" height="520" fill="#091124"/>
+  <rect x="165" y="100" width="470" height="320" rx="22" fill="#142240" stroke="#FFE156" stroke-width="3"/>
+  <rect x="195" y="130" width="410" height="260" rx="12" fill="#F5F3EE"/>
+  <rect x="220" y="155" width="160" height="28" rx="6" fill="#091124"/>
+  <rect x="220" y="205" width="230" height="75" rx="10" fill="#FF6B5B"/>
+  <rect x="470" y="205" width="110" height="75" rx="10" fill="#B89CFF"/>
+  <rect x="220" y="298" width="360" height="65" rx="10" fill="#091124"/>
+  <circle cx="265" cy="330" r="14" fill="#FFE156"/>
+  <rect x="300" y="322" width="180" height="16" rx="8" fill="#B89CFF"/>
+  <g fill="#FFE156">
+    <rect x="135" y="165" width="30" height="12" rx="4"/><rect x="135" y="215" width="30" height="12" rx="4"/>
+    <rect x="135" y="265" width="30" height="12" rx="4"/><rect x="635" y="165" width="30" height="12" rx="4"/>
+    <rect x="635" y="215" width="30" height="12" rx="4"/><rect x="635" y="265" width="30" height="12" rx="4"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Urban Sketching and Architectural Ink Walk artwork">
+  <rect width="800" height="520" fill="#0C152B"/>
+  <rect x="130" y="95" width="540" height="330" rx="18" fill="#152344" stroke="#B89CFF" stroke-width="2.5"/>
+  <path d="M210 355 L210 190 L290 140 L370 190 L370 355 Z" fill="none" stroke="#FFE156" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M370 355 L370 220 L485 165 L585 220 L585 355 Z" fill="none" stroke="#FF6B5B" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="245" y="220" width="34" height="48" rx="4" fill="#B89CFF"/>
+  <rect x="300" y="220" width="34" height="48" rx="4" fill="#B89CFF"/>
+  <rect x="440" y="240" width="44" height="115" rx="22" fill="#FFE156" opacity="0.9"/>
+  <path d="M525 130 L645 250 L620 275 L500 155 Z" fill="#FFE156"/>
+  <polygon points="645,250 672,277 620,275" fill="#FF6B5B"/>
+</svg>

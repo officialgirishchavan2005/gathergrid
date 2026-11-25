@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Saturday Sunrise Rooftop Run and Espresso artwork">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1329"/>
+      <stop offset="65%" stop-color="#1E2752"/>
+      <stop offset="100%" stop-color="#FF6B5B" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#sky4)"/>
+  <circle cx="400" cy="280" r="115" fill="#FFE156"/>
+  <circle cx="400" cy="280" r="150" fill="none" stroke="#FFE156" stroke-width="2" stroke-dasharray="8 10" opacity="0.7"/>
+  <path d="M0 340 L120 340 L120 265 L210 265 L210 340 L310 340 L310 290 L420 290 L420 340 L550 340 L550 245 L660 245 L660 340 L800 340 L800 520 L0 520 Z" fill="#0B1224"/>
+  <path d="M70 430 C190 385, 290 455, 420 405 C530 365, 635 445, 740 395" fill="none" stroke="#B89CFF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="420" cy="405" r="11" fill="#FFE156"/>
+  <circle cx="740" cy="395" r="11" fill="#FF6B5B"/>
+  <rect x="610" y="110" width="90" height="90" rx="22" fill="#121D3A" stroke="#B89CFF" stroke-width="2.5"/>
+  <path d="M635 160 L675 160 C675 182, 635 182, 635 160 Z" fill="#FFE156"/>
+  <path d="M645 145 Q650 132 645 124 M662 145 Q667 132 662 124" fill="none" stroke="#FF6B5B" stroke-width="3" stroke-linecap="round"/>
+</svg>
